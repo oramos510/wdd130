@@ -60,3 +60,9 @@ footer {
     text-align: center;
 }
 
+.hero{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
