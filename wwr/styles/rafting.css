@@ -8,92 +8,89 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    color: var(--text-color);
-    background-color: var(--background-color);
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
     align-items: center;
-    padding: 1rem;
-    background-color: var(--primary-color);
+    padding: 10px;
+    background-color: #333;
+    color: white;
 }
 
 header img {
     height: 50px;
 }
 
-nav a {
-    color: #fff;
-    text-decoration: none;
-    margin-left: 1rem;
-}
-
-.hero {
-    position: relative;
+header h1 {
     text-align: center;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
     color: white;
+    padding: 10px;
+    transition: background-color 0.3s;
 }
 
-.hero img {
+nav ul li a:hover {
+    background-color: #555;
+}
+
+main {
+    padding: 20px;
+}
+
+#history {
+    margin-bottom: 40px;
+}
+
+#adventures {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#adventures figure {
+    margin: 0;
+    text-align: center;
+}
+
+#adventures img {
     width: 100%;
+    max-width: 200px;
     height: auto;
-    display: block;
-}
-
-.hero h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 1rem;
-    border-radius: 5px;
-}
-
-.hero article {
-    position: absolute;
-    bottom: 10%;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 1rem;
-    border-radius: 5px;
-}
-
-.hero article img {
-    float: right;
-    margin-left: 1rem;
-    border-radius: 5px;
-}
-
-section {
-    padding: 2rem;
 }
 
 footer {
-    background-color: var(--secondary-color);
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: right;
 }
 
-footer img {
-    width: 24px;
-    height: 24px;
-    margin: 0 0.5rem;
+footer .social-media {
+    display: flex;
+    justify-content: flex-end;
 }
 
-footer a {
-    text-decoration: none;
-}
-
-footer a img {
-    filter: invert(1);
+footer .social-media img {
+    height: 30px;
+    margin-left: 10px;
 }
