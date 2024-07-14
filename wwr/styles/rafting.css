@@ -94,3 +94,43 @@ footer .social-media img {
     height: 30px;
     margin-left: 10px;
 }
+
+#employee-profiles .employee {
+    display: inline-block;
+    text-align: left;
+    margin: 10px;
+    
+}
+
+#contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-form label {
+    margin-top: 10px;
+}
+
+#contact-form input, #contact-form textarea, #contact-form button {
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 1em;
+}
+
+#contact-form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#contact-form button:hover {
+    background-color: #45a049;
+}
+
+.employee img {
+    width: 150px;
+    height: auto;
+    border: 1px solid steelblue;
+    box-shadow: 0 0 30px gray;
+}
